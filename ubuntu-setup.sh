@@ -43,11 +43,11 @@ fi
 nvim --version | head -n 1
 
 # === LAZYGIT ===
-echo "🐙 Installing LazyGit..."
-sudo add-apt-repository ppa:lazygit-team/release
-sudo apt update
-sudo apt install lazygit -y
-lazygit --version
+# echo "🐙 Installing LazyGit..."
+# sudo add-apt-repository ppa:lazygit-team/release
+# sudo apt update
+# sudo apt install lazygit -y
+# lazygit --version
 
 # === NEOVIM CONFIG ===
 echo "🧩 Installing your Neovim config from GitHub..."
