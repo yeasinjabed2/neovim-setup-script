@@ -44,10 +44,9 @@ nvim --version | head -n 1
 
 # === LAZYGIT ===
 echo "🐙 Installing LazyGit..."
-LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")')
-curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
-rm lazygit.tar.gz
+sudo add-apt-repository ppa:lazygit-team/release
+sudo apt update
+sudo apt install lazygit -y
 lazygit --version
 
 # === NEOVIM CONFIG ===
